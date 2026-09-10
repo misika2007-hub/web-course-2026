@@ -191,15 +191,10 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  transition: background 0.2s, color 0.2s, transform 0.15s;
-  border: 1px solid transparent;
+  
 }
 
-.skill:hover {
-  background: #2563eb;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
+
 
 /* Контакты  */
 .footer {

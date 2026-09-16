@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoLux — Автосалон премиум-класса</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Auto<span>Lux</span></a>
+
+      <!-- Гамбургер (виден только на мобильных) -->
+      <button class="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#cars">Автомобили</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- главная штука эта -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__subtitle">Премиум автосалон</p>
+          <h1 class="hero__title">Найди автомобиль своей мечты</h1>
+          <p class="hero__text">
+            Более 200 моделей от ведущих мировых производителей.
+            Индивидуальный подход, тест-драйв и выгодные условия.
+          </p>
+          <div class="hero__actions">
+            <a href="#cars" class="btn btn--primary">Смотреть каталог</a>
+            <a href="#contact" class="btn btn--ghost">Связаться</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Премиальный автомобиль">
+        </div>
+      </div>
+    </section>
+
+    <!-- поч мы -->
+    <section class="features" id="about">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon">🏆</div>
+            <h3>Официальный дилер</h3>
+            <p>Прямые поставки от производителей и полная гарантия.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">💎</div>
+            <h3>Премиум-сервис</h3>
+            <p>Персональный менеджер и индивидуальные условия покупки.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">🔧</div>
+            <h3>Сервис 24/7</h3>
+            <p>Собственный техцентр и поддержка на дороге в любое время.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- бибики -->
+    <section class="cars" id="cars">
+      <div class="container">
+        <h2 class="section-title">Популярные модели</h2>
+        <div class="cars__grid">
+
+          <article class="car-card">
+            <div class="car-card__image">
+              <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80" alt="BMW M4">
+            </div>
+            <div class="car-card__body">
+              <h3>BMW M4 Competition</h3>
+              <p class="car-card__price">от 7 200 000 ₽</p>
+              <ul class="car-card__specs">
+                <li>510 л.с.</li>
+                <li>3.5 с до 100</li>
+                <li>2024</li>
+              </ul>
+              <button class="btn btn--primary btn--full">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-card__image">
+              <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&q=80" alt="Mercedes AMG">
+            </div>
+            <div class="car-card__body">
+              <h3>Mercedes-AMG GT</h3>
+              <p class="car-card__price">от 9 800 000 ₽</p>
+              <ul class="car-card__specs">
+                <li>585 л.с.</li>
+                <li>3.2 с до 100</li>
+                <li>2024</li>
+              </ul>
+              <button class="btn btn--primary btn--full">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-card__image">
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80" alt="Audi RS7">
+            </div>
+            <div class="car-card__body">
+              <h3>Audi RS7 Sportback</h3>
+              <p class="car-card__price">от 8 500 000 ₽</p>
+              <ul class="car-card__specs">
+                <li>600 л.с.</li>
+                <li>3.6 с до 100</li>
+                <li>2024</li>
+              </ul>
+              <button class="btn btn--primary btn--full">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-card__image">
+              <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80" alt="Porsche 911">
+            </div>
+            <div class="car-card__body">
+              <h3>Porsche 911 Turbo S</h3>
+              <p class="car-card__price">от 14 200 000 ₽</p>
+              <ul class="car-card__specs">
+                <li>650 л.с.</li>
+                <li>2.7 с до 100</li>
+                <li>2024</li>
+              </ul>
+              <button class="btn btn--primary btn--full">Подробнее</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- контакты -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <h2 class="section-title section-title--left">Оставьте заявку</h2>
+          <p>Заполните форму — наш менеджер свяжется с вами в течение 15 минут.</p>
+          <ul class="contact__list">
+            <li>📞 +7 (999) 123-45-67</li>
+            <li>✉️ info@autolux.ru</li>
+            <li>📍 Москва, ул. Автомобильная, 10</li>
+          </ul>
+        </div>
+
+        <form class="form" novalidate>
+          <div class="form__group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form__group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Какая модель вас интересует?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- футер -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="logo">Auto<span>Lux</span></p>
+      <p class="footer__copy">© 2026 AutoLux. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

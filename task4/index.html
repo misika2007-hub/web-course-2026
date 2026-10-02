@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Быки и коровы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">Быки и коровы</h1>
+
+    <p class="app__hint">Компьютер загадал 4 цифры без повторов. Угадайте число.</p>
+
+    <form class="form" id="guess-form" novalidate>
+      <input
+        type="text"
+        id="guess-input"
+        class="form__input"
+        placeholder="Введите 4 цифры"
+        autocomplete="off"
+        maxlength="4"
+        inputmode="numeric"
+      >
+      <button type="submit" class="form__btn" id="check-btn">Проверить</button>
+    </form>
+
+    <p class="error" id="error" hidden></p>
+
+    <div class="status">
+      <p class="status__item">Попыток: <span id="attempts">0</span></p>
+    </div>
+
+    <button type="button" class="reset-btn" id="reset-btn">Новая игра</button>
+
+    <h2 class="history__title">История попыток</h2>
+    <ul class="history" id="history"></ul>
+
+    <p class="win" id="win" hidden></p>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

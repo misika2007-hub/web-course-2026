@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #1a1d24;
+  color: #e8ecf3;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  background: #23272f;
+  border-radius: 16px;
+  padding: 20px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.app__round {
+  font-size: 1rem;
+  color: #9aa3b2;
+  margin-bottom: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 16px;
+}
+
+.sector {
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.15s, box-shadow 0.15s;
+  filter: brightness(0.6);
+  outline: none;
+}
+
+.sector--green  { background: #2ecc71; }
+.sector--red    { background: #e74c3c; }
+.sector--blue   { background: #3498db; }
+.sector--yellow { background: #f1c40f; }
+
+.sector:hover:not(:disabled) {
+  filter: brightness(0.75);
+}
+
+.sector.active {
+  filter: brightness(1.4);
+  transform: scale(0.97);
+  box-shadow: 0 0 24px currentColor;
+}
+
+.sector--green.active  { color: #2ecc71; }
+.sector--red.active    { color: #e74c3c; }
+.sector--blue.active   { color: #3498db; }
+.sector--yellow.active { color: #f1c40f; }
+
+.sector:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.status {
+  font-size: 1rem;
+  color: #b8c0cc;
+  text-align: center;
+  min-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+.status--win {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.status--lose {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.start-btn {
+  width: 100%;
+  max-width: 340px;
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1d24;
+  background: #e8ecf3;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.start-btn:hover:not(:disabled) {
+  background: #ffffff;
+}
+
+.start-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

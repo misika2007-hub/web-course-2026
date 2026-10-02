@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo-list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">Список задач</h1>
+
+    <form class="form" id="todo-form" novalidate>
+      <input
+        type="text"
+        id="todo-input"
+        class="form__input"
+        placeholder="Что нужно сделать?"
+        autocomplete="off"
+      >
+      <button type="submit" class="form__btn">Добавить</button>
+    </form>
+
+    <p class="warning" id="warning" hidden>Введите текст задачи</p>
+
+    <p class="counter" id="counter">Осталось: 0, Выполнено: 0</p>
+
+    <div class="filters" id="filters">
+      <button type="button" class="filters__btn is-active" data-filter="all">Все</button>
+      <button type="button" class="filters__btn" data-filter="active">Активные</button>
+      <button type="button" class="filters__btn" data-filter="completed">Завершённые</button>
+    </div>
+
+    <ul class="todo-list" id="todo-list"></ul>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
